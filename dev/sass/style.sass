@@ -3,30 +3,31 @@
     src: url(../fonts/Inter-Regular.ttf) format('ttf'), url(../fonts/Inter-Regular.woff) format('woff')
     font-weight: 400
 
-    &
-        font-family: 'Inter'
-        src: url(../fonts/Inter-Medium.ttf) format('ttf'), url(../fonts/Inter-Medium.woff) format('woff')
-        font-style: italic
-        font-weight: 500
+@font-face
+    font-family: 'Inter'
+    src: url(../fonts/Inter-Medium.ttf) format('ttf'), url(../fonts/Inter-Medium.woff) format('woff')
+    font-style: italic
+    font-weight: 500
 
-    &
-        font-family: 'Inter'
-        src: url(../fonts/Inter-SemiBold.ttf) format('ttf'), url(../fonts/Inter-SemiBold.woff) format('woff')
-        font-style: italic
-        font-weight: 600
+@font-face
+    font-family: 'Inter'
+    src: url(../fonts/Inter-SemiBold.ttf) format('ttf'), url(../fonts/Inter-SemiBold.woff) format('woff')
+    font-style: italic
+    font-weight: 600
 
-    &
-        font-family: 'Inter'
-        src: url(../fonts/Inter-Bold.ttf) format('ttf'), url(../fonts/Inter-Bold.woff) format('woff')
-        font-weight: 700
+@font-face
+    font-family: 'Inter'
+    src: url(../fonts/Inter-Bold.ttf) format('ttf'), url(../fonts/Inter-Bold.woff) format('woff')
+    font-weight: 700
 
 @import 'base/vars'
 @import 'base/buttons'
 @import 'base/mixins'
+@import 'base/typography'
 
 body
     font-family: 'Inter', sans-serif
-    background-color: #ffff
+    background-color: black
 
 .container
     max-width: 120rem
