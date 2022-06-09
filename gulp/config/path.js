@@ -17,7 +17,7 @@ export const path = {
 		js: `${srcFolder}/js/**/*.js`,
 		images: `${srcFolder}/img/**/*.{jpg,JPG,jpeg,JPEG,png,PNG,gif,webp,WEBP}`,
 		svg: `${srcFolder}/img/**/*.svg`,
-		sass: `${srcFolder}/**/*.{sass,scss,css}`,
+		sass: `${srcFolder}/styles/sass/**/*.{sass,scss,css}`,
 		scss_ignore: `!${srcFolder}/styles/utils/*.{sass,scss,css}`,
 		html: `${srcFolder}/*.html`,
 		files: `${srcFolder}/files/**/*.*`,
@@ -25,7 +25,7 @@ export const path = {
 	},
 	watch: {
 		js: `${srcFolder}/js/**/*.js`,
-		sass: `${srcFolder}/**/*.{sass,scss,css}`,
+		sass: `${srcFolder}/styles/**/*.{sass,scss,css}`,
 		html: `${srcFolder}/**/*.html`,
 		images: `${srcFolder}/img/**/*.{jpg,JPG,jpeg,JPEG,png,PNG,gif,webp,WEBP}`,
 		files: `${srcFolder}/files/**/*.*`

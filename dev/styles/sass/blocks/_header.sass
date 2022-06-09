@@ -1,0 +1,38 @@
+.header
+    .container
+        height: 5.6rem
+        display: flex
+        justify-content: space-between
+        align-items: center
+    &__logo
+        color: $title-color
+        font-weight: 700
+        font-size: 1.25rem
+        img
+            margin-right: 0.5rem
+    &__menu-list
+        display: flex
+        list-style-type: none
+
+    .menu-item
+        font-weight: 500
+        font-size: 1rem
+        a
+            color: $text-color
+            &:hover
+                color: $main-color
+
+    .menu-item:not(:last-child)
+        margin: 0rem 2.6rem 0rem 0rem
+    &__signUp
+        display: flex
+        align-items: center
+        a
+            font-weight: 600
+            font-size: 1rem
+            color: $title-color
+            margin-right: 2.25rem
+    &__burger
+        display: none
+a
+    text-decoration: none
