@@ -12,11 +12,16 @@
     font-size: 0.6rem
     color: #ffff
     text-align: center
+    border: none
+    cursor: pointer
     &:hover
         background-color: $btn-hover-color
-        transition: 0.2s ease-in-out
-
-    @include minw($pc)
+        transition: 0.4s ease-in-out
+    @include maxw($tablet)
+        width: 9rem
+        height: 3rem
+        font-size: 0.9rem
+    @include minw($tablet)
         width: 11.3rem
         height: 3.6rem
         font-size: 1.1rem
@@ -24,7 +29,7 @@
 // button Sign Up
 
 .bttn-signUp
-    width: 4.3rem
+    width: 4.1rem
     background-color: #FFF1E8
     border: 1px solid $main-color
     border-radius: 4px
@@ -32,8 +37,12 @@
     &:hover
         background-color: $main-color
         color: #ffff
+    @include maxw($sm-pc)
+        width: 7rem
+        height: 2.7rem
+        font-size: 0.9rem
 
-    @include minw($pc)
+    @include minw($sm-pc)
         width: 7.6rem
         height: 3rem
         font-size: 1rem
@@ -44,8 +53,14 @@
     background-color: #ffff
     color: $title-color
     width: 4.8rem
-
-    @include minw($pc)
+    border: 1px solid #333
+    &:hover
+        background-color: $main-color
+        color: #fff
+        border: none
+    @include maxw($tablet)
+        width: 7rem
+    @include minw($tablet)
         width: 8.9rem
 
 // button book now

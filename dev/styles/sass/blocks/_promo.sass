@@ -1,0 +1,68 @@
+.promo
+    background: url(../../img/promo/bg.jpg) center center/cover no-repeat
+    background-position: 110% 10%
+    @include maxw($sm-tablet)
+        background-position: 110% 28rem
+        background-size: 170%
+
+    &__block
+        display: flex
+        @include maxw($sm-tablet)
+            flex-wrap: wrap
+    &__bg
+        margin-top: 8rem
+        @include maxw($sm-tablet)
+            margin-top: 0
+            transform: translateY(20%)
+            display: flex
+            justify-content: center
+            margin: 0 auto
+        img
+            width: 100%
+            height: auto
+            @include maxw($sm-tablet)
+                width: 65%
+                height: auto
+                margin: 0 auto
+
+    &__offer
+        margin-top: 8rem
+        width: 50%
+        @include maxw($pc)
+            width: 60%
+        @include maxw($sm-tablet)
+            width: 100%
+            margin-top: 4rem
+        @include maxw($tablet)
+            width: 80%
+
+    .title
+        line-height: 80px
+        margin-bottom: 0
+        @include maxw($pc)
+            font-weight: 800
+            font-size: 3.4rem
+            line-height: 65px
+        @include maxw($tablet)
+            font-size: 2.7rem
+            line-height: 55px
+
+    .subtitle
+        margin-top: 1.2rem
+        max-width: 65%
+        @include maxw($pc)
+            font-size: 0.9rem
+        @include maxw($tablet)
+            max-width: 80%
+
+    &__button
+        display: flex
+        margin-top: 3rem
+        @include maxw($sm-tablet)
+            margin-top: 2rem
+    button
+        margin-right: 1.2rem
+    &__wrapper
+        display: flex
+        justify-content: space-between
+        margin-top: 8.75rem

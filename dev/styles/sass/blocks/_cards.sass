@@ -1,0 +1,136 @@
+.cards
+    transform: translateY(-60%)
+    background-color: #258675
+    max-height: 10rem
+    @include maxw($pc)
+        transform: translateY(-50%)
+    @include maxw($tablet)
+        max-height: 6rem
+    @include maxw($sm-tablet)
+        max-height: 30rem
+        transform: translateY(-13%)
+    .container
+        max-height: 10rem
+        @include maxw($sm-tablet)
+            max-height: 22rem
+    &__wrapper
+        display: flex
+        align-items: center
+        justify-content: space-between
+        flex-wrap: wrap
+        transform: translateY(-50%)
+        align-items: stretch
+        @include maxw($pc)
+            transform: translateY(-20%)
+        @include maxw($sm-tablet)
+            justify-content: center
+            margin: 0rem -1rem
+            transform: translateY(-15%)
+            margin-top: 2rem
+
+    &__item
+        width: 20%
+        height: auto
+        padding: 1.5rem 1.5rem
+        background-color: #ffff
+        border-radius: 3%
+        box-shadow: 0px -7px 15px -7px #dedede
+        @include maxw($pc)
+            transform: translateY(-20%)
+            max-height: 180px
+        @include maxw($sm-pc)
+            width: 20%
+        @include maxw($tablet)
+            width: 18%
+            max-height: 120px
+        @include maxw($sm-tablet)
+            width: 33.333%
+            max-height: 200px
+            margin: 0rem 1rem
+        @include maxw($lg-mob)
+            max-height: 150px
+
+        &-big
+            width: 35%
+            // height: 100%
+            background-color: #FEAEA3
+            display: flex
+            justify-content: space-between
+            box-shadow: none
+            @include maxw($lg)
+                width: 40%
+                max-height: 250px
+            @include maxw($pc)
+                width: 40%
+                max-height: 180px
+            @include maxw($tablet)
+                width: 40%
+                max-height: 120px
+            @include maxw($sm-tablet)
+                width: 63%
+                margin-top: 1.5rem
+                max-height: 200px
+            @include maxw($lg-mob)
+                width: 100%
+                max-height: 150px
+
+    &__text
+        display: flex
+        justify-content: space-between
+        align-items: center
+        line-height: 2rem
+        height: 45%
+        h3
+            margin-top: 0rem
+            @include maxw($pc)
+                font-size: 1rem
+                line-height: 1.5rem
+            @include maxw($tablet)
+                font-size: 0.8rem
+                line-height: 1.2rem
+            @include maxw($sm-tablet)
+                font-size: 1rem
+
+        @include maxw($pc)
+            line-height: 1rem
+    &__descr
+        width: 50%
+        height: 100%
+        a
+            font-weight: 600
+            font-size: 0.9rem
+            line-height: 1.5rem
+            color: $title-color
+            @include maxw($pc)
+                font-size: 0.7rem
+            @include maxw($tablet)
+                font-size: 0.5rem
+
+        p
+            margin-top: 0
+            @include maxw($pc)
+                font-size: 0.8rem
+                line-height: 1.1rem
+            @include maxw($tablet)
+                font-size: 0.6rem
+                line-height: 0.9rem
+
+    &__number
+        font-weight: 700
+        font-size: 3.1rem
+        color: #CFCFCF
+        &-red
+            color: #FF7D6B
+        @include maxw($pc)
+            font-size: 2.5rem
+        @include maxw($tablet)
+            font-size: 2rem
+
+    &__img
+        img
+            width: 100%
+            height: auto
+        &-big
+            img
+                height: 100%
+                width: auto

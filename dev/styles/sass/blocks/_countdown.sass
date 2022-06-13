@@ -1,0 +1,33 @@
+.countdown
+    padding: 0rem 0rem 3rem 0rem
+    margin-top: -3rem
+    @include maxw($sm-tablet)
+        margin-top: 0
+    .container
+        display: flex
+        justify-content: space-between
+        @include maxw($sm-tablet)
+            flex-wrap: wrap-reverse
+    &__wrapper
+        display: flex
+        flex-wrap: wrap
+        margin: 0 -2.2rem
+    &__item
+        width: calc( 50% - 5rem )
+        margin: 0 2.2rem
+        h4
+            line-height: 0.5rem
+        p
+            width: 70%
+            @include maxw($tablet)
+                width: 90%
+    &__text
+        span
+            font-weight: 800
+        div
+            @include maxw($sm-tablet)
+                width: 20%
+            img
+                @include maxw($sm-tablet)
+                    width: 100%
+                    height: auto

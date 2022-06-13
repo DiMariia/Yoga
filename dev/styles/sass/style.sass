@@ -25,20 +25,40 @@
 @import 'base/mixins'
 @import 'base/typography'
 @import 'blocks/header'
+@import 'blocks/promo'
+@import 'blocks/cards'
+@import 'blocks/countdown'
 
 body
     font-family: 'Inter', sans-serif
+    margin: 0
 
 .container
     max-width: 100rem
     margin: 0 auto
     padding: 0 10rem
 
+    @include minw($mob)
+        max-width: 100rem
+        padding: 0 3rem
+
+    @include minw($sm-tablet)
+        max-width: 100rem
+        padding: 0 3rem
+
+    @include minw($tablet)
+        max-width: 120rem
+        padding: 0 4rem
+
     @include minw($sm-pc)
         max-width: 100rem
+        padding: 0 6rem
+    @include minw($lg)
+        max-width: 100rem
+        padding: 0 10rem
 
 section
-    padding: 9rem 0
+    padding: 3rem 0
 .bg-grey
     background-color: $bg-grey
 .bg-green
