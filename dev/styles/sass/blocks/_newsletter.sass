@@ -1,0 +1,36 @@
+.newsletter
+    background-color: #258675
+    .container
+        text-align: center
+    &__wrapper
+        border: 10px solid #45A090
+        border-radius: 8px
+        @include adaptiv-value("padding-top", 70, 28, 0)
+        @include adaptiv-value("padding-bottom", 70, 28, 0)
+        @include maxw($lg-mob)
+            border: 4px solid #45A090
+
+    h3
+        color: #ffff
+    p
+        color: #D4EEE9
+    &__form
+        input
+            border: 1px solid #45A090
+            border-radius: 4px
+            background-color: #258675
+            color: #94CAC0
+            @include adaptiv-value("width", 575, 250, 0)
+            @include adaptiv-value("height", 60, 30, 0)
+            @include adaptiv-value("padding-left", 24, 12, 0)
+
+        input::placeholder
+            color: #94CAC0
+            @include adaptiv-font(16, 10)
+
+        button
+            display: inline-block
+            @include maxw($lg-mob)
+                display: block
+                margin: 0 auto
+                margin-top: 20px

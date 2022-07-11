@@ -1,0 +1,140 @@
+.footer
+    padding-bottom: 25px
+    @include maxw($sm-pc)
+    @include adaptiv-value("padding-top", 100, 70, 0)
+
+    .container
+        background: url(../../img/footer/bg.jpg) center center/contain no-repeat
+        background-size: 80% 80%
+        @include maxw($sm-tablet)
+            background-size: 70% 60%
+
+    &__wrapper
+        display: flex
+        justify-content: space-between
+        .title
+            width: 45%
+            @include adaptiv-value("margin-top", 250, 0, 0)
+            @include adaptiv-value("margin-left", 50, 0, 0)
+            @include maxw($sm-pc)
+                width: 60%
+                text-align: center
+                margin: 0 auto
+            @include maxw($sm-tablet)
+                width: 80%
+            @include maxw($lg-mob)
+                width: 100%
+
+        @include maxw($sm-pc)
+            flex-wrap: wrap
+            justify-content: center
+
+.form__course
+    background-color: #Ffff
+    @include adaptiv-value("width", 470, 240, 0)
+    @include adaptiv-value("height", 560, 310, 0)
+    @include adaptiv-value("padding", 50, 25, 0)
+    border-radius: 6px
+    box-shadow: 0px 8px 30px -10px #dedede
+    @include maxw($sm-pc)
+        @include adaptiv-value("margin-top", 70, 30, 0)
+
+    form
+        input
+            width: calc( 100% - $addaptiv-padding-form )
+            @include adaptiv-value("height", 60, 35, 0)
+            @include adaptiv-value("margin-bottom", 20, 15, 0)
+            @include adaptiv-value("padding-left", 24, 12, 0)
+            border: 1px solid #c9c8c8
+            border-radius: 6px
+        input::placeholder
+            color: $text-color
+            @include adaptiv-font(16, 10)
+        .text
+            @include adaptiv-value("height", 150, 70, 0)
+
+        label
+            input
+                width: 0
+        button
+            @include adaptiv-value("margin-top", 30, 10, 0)
+
+.confirm
+    display: block
+    position: relative
+    @include adaptiv-value("padding-left", 35, 20, 0)
+    margin-bottom: 12px
+    cursor: pointer
+    @include adaptiv-font(16, 10)
+    user-select: none
+    span
+        color: $main-color
+    input
+        position: absolute
+        opacity: 0
+        cursor: pointer
+        height: 0
+        width: 0
+
+.checkmark
+    position: absolute
+    top: 0
+    left: 0
+    @include adaptiv-value("height", 22, 12, 0)
+    @include adaptiv-value("width", 22, 12, 0)
+    background-color: #eee
+    border-radius: 2px
+
+.confirm:hover input ~ .checkmark
+    background-color: #ccc
+
+.confirm input:checked ~ .checkmark
+    background-color: $main-color
+
+.checkmark:after
+    content: ' '
+    position: absolute
+    display: none
+
+.confirm input:checked ~ .checkmark:after
+    display: block
+
+.confirm .checkmark:after
+    @include adaptiv-value("left", 8, 4, 0)
+    @include adaptiv-value("top", 3, 1, 0)
+    @include adaptiv-value("width", 4, 2, 0)
+    @include adaptiv-value("height", 8, 5, 0)
+    border: solid white
+    border-width: 0 3px 3px 0
+    -webkit-transform: rotate(45deg)
+    -ms-transform: rotate(45deg)
+    transform: rotate(45deg)
+
+.links__wrapper
+    @include adaptiv-value("margin-top", 150, 50, 0)
+    display: flex
+    justify-content: space-between
+    align-items: center
+    @include maxw($lg-mob)
+        flex-wrap: wrap
+    .header__logo
+        @include maxw($lg-mob)
+            width: 100%
+    p
+        @include maxw($mob)
+            width: 100%
+
+    .social
+        @include adaptiv-value("width", 250, 100, 0)
+        display: flex
+        justify-content: space-between
+        &_link
+            display: flex
+            @include adaptiv-value("width", 20, 8, 0)
+            @include adaptiv-value("height", 20, 8, 0)
+            background-color: #fff
+            @include adaptiv-value("padding", 15, 10, 0)
+            border-radius: 50%
+            justify-content: center
+            align-items: center
+            box-shadow: 0px 8px 30px -7px #dedede

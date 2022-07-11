@@ -2,62 +2,54 @@
 // title tor main screen  
 h1
     font-weight: 800
-    font-size: 2.2rem
+    @include adaptiv-font(70, 32)
     color: $title-color
-
-    @include minw($sm-pc)
-        font-size: 4.4rem
 
 // title and subtitle for section
 
 h2
     font-weight: 700
-    font-size: 1.6rem
+    @include adaptiv-font(50, 25)
     color: $title-color
-
-    @include maxw($sm-pc)
-        font-size: 1.8rem !important
-    @include maxw($pc)
-        font-size: 2.5rem
-    @include minw($pc)
-        font-size: 3.1rem
 
 .subtitle
     font-weight: 400
-    font-size: 0.75rem
+    @include adaptiv-font(18, 12)
     color: $text-color
     line-height: 1.4rem
-
-    @include minw($sm-pc)
-        font-size: 1rem
-        line-height: 1.6rem
+    @include minw($sm-tablet)
+        line-height: 1.75rem
 
 // title for card to main screen
 h3
     font-weight: 700
-    font-size: 0.9rem
+    @include adaptiv-font(24, 12)
     color: $title-color
-
+    line-height: 1rem
+    @include minw($lg-mob)
+        line-height: 1.3rem
+    @include minw($sm-tablet)
+        line-height: 1.5rem
     @include minw($sm-pc)
-        font-size: 1.5rem
+        line-height: 1.75rem
 
 // title for card
 
 h4
     font-weight: 600
-    font-size: 1rem
+    @include adaptiv-font(20, 11)
     line-height: 1.4rem
-
     @include minw($tablet)
-        font-size: 1.25rem
         line-height: 1.9rem
 
 // other text   
 p
     font-weight: 400
-    font-size: 0.8rem
+    @include adaptiv-font(15, 10)
     line-height: 1.25rem
-
     @include minw($tablet)
-        font-size: 0.9rem
         line-height: 1.5rem
+li
+    font-weight: 400
+    @include adaptiv-font(16, 11)
+    color: $text-color

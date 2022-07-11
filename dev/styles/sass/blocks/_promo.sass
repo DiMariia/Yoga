@@ -2,8 +2,11 @@
     background: url(../../img/promo/bg.jpg) center center/cover no-repeat
     background-position: 110% 10%
     @include maxw($sm-tablet)
-        background-position: 110% 28rem
+        background-position: 110% 24rem
         background-size: 170%
+    @include maxw($mob)
+        background-position: 105% 22rem
+        background-size: 185%
 
     &__block
         display: flex
@@ -17,6 +20,12 @@
             display: flex
             justify-content: center
             margin: 0 auto
+        @include minw($sm-tablet)
+            transform: translateX(10%)
+            transform: translateY(10%)
+        @include maxw($sm-tablet)
+            transform: translateY(10%)
+
         img
             width: 100%
             height: auto
@@ -28,40 +37,37 @@
     &__offer
         margin-top: 8rem
         width: 50%
-        @include maxw($pc)
-            width: 60%
-        @include maxw($sm-tablet)
+        @include maxw($mob)
             width: 100%
+            margin-top: 0.8rem
+        @include minw($mob)
+            width: 100%
+            margin-top: 2rem
+        @include minw($lg-mob)
             margin-top: 4rem
-        @include maxw($tablet)
-            width: 80%
+        @include minw($sm-tablet)
+            width: 109%
+        @include minw($tablet)
+            width: 75%
 
     .title
-        line-height: 80px
         margin-bottom: 0
-        @include maxw($pc)
-            font-weight: 800
-            font-size: 3.4rem
-            line-height: 65px
-        @include maxw($tablet)
-            font-size: 2.7rem
-            line-height: 55px
-
     .subtitle
         margin-top: 1.2rem
-        max-width: 65%
-        @include maxw($pc)
-            font-size: 0.9rem
-        @include maxw($tablet)
-            max-width: 80%
-
+        @include minw($pc)
+            width: 80%
     &__button
         display: flex
         margin-top: 3rem
         @include maxw($sm-tablet)
             margin-top: 2rem
+        @include minw($sm-tablet)
+            margin-top: 1rem
+        @include minw($tablet)
+            margin-top: 3rem
+
     button
-        margin-right: 1.2rem
+        @include adaptiv-value("margin-right", 23, 10, 0)
     &__wrapper
         display: flex
         justify-content: space-between

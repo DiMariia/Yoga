@@ -28,22 +28,28 @@
 @import 'blocks/promo'
 @import 'blocks/cards'
 @import 'blocks/countdown'
+@import 'blocks/features'
+@import 'blocks/courses'
+@import 'blocks/pricing'
+@import 'blocks/reviews'
+@import 'blocks/newsletter'
+@import 'blocks/footer'
 
 body
     font-family: 'Inter', sans-serif
     margin: 0
 
 .container
-    max-width: 100rem
+    // max-width: 25rem
     margin: 0 auto
-    padding: 0 10rem
+    padding: 0 1rem
 
     @include minw($mob)
-        max-width: 100rem
-        padding: 0 3rem
+        // max-width: 20rem
+        padding: 0 2rem
 
     @include minw($sm-tablet)
-        max-width: 100rem
+        // max-width: 100rem
         padding: 0 3rem
 
     @include minw($tablet)

@@ -1,0 +1,37 @@
+.reviews
+    @include adaptiv-value("padding-bottom", 150, 70, 0)
+
+    h2
+        text-align: center
+
+    &__item
+        display: block
+        margin: 0 auto
+        background-color: #ffff
+        box-shadow: 0px 60px 150px -20px rgba(0, 0, 0, 0.04)
+        border-radius: 20px
+        @include adaptiv-value("max-width", 740, 340, 0)
+        text-align: center
+        @include adaptiv-value("padding-bottom", 35, 10, 0)
+
+        p
+            @include adaptiv-font(13, 9)
+            @include adaptiv-value("margin-top", 28, 20, 0)
+
+            span
+                font-weight: 600
+                @include adaptiv-font(16, 11)
+    .descr
+        font-style: italic
+        @include adaptiv-value("line-height", 32, 16, 0)
+        @include adaptiv-value("max-width", 590, 320, 0)
+        text-align: center
+        margin: 0 auto
+
+    &__img
+        @include adaptiv-value("width", 220, 100, 0)
+        @include adaptiv-value("height", 150, 60, 0)
+        margin: 0 auto
+        img
+            width: 100%
+            height: auto

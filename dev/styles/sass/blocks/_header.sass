@@ -15,12 +15,11 @@
         left: 0
         width: 100%
         border-radius: 0
+    @include maxw($mob)
+        box-shadow: none
+
     &__container
         position: relative
-        @include maxw($lg)
-            padding: 0 3rem !important
-        // @include maxw($tablet)
-        //     padding: 0 2rem !important
 
     &__body
         position: relative
@@ -29,17 +28,26 @@
         align-items: center
         height: 5.6rem
         z-index: 5
+        @include maxw($mob)
+            height: 3.4rem
+        @include maxw($lg-mob)
+            height: 4.3rem
 
     &__logo
         color: $title-color
         font-weight: 700
-        font-size: 1.25rem
+        @include adaptiv-font(20, 14)
+        @include maxw($mob)
+            font-size: 0.8rem
         img
             margin-right: 0.5rem
+            @include maxw($mob)
+                max-width: 1.2rem
+
     &__menu
         width: 60%
         @include maxw($pc)
-            width: 50%
+            width: 58%
     &__menu-list
         display: flex
         list-style-type: none
@@ -63,6 +71,9 @@
             @include maxw($sm-tablet)
                 font-size: 1.5rem
                 line-height: 3rem
+            @include maxw($mob)
+                font-size: 1.3rem
+                line-height: 2.5rem
         a::before
             content: ''
             position: absolute
@@ -79,9 +90,9 @@
             transition: width 0.35s
 
     .menu-item:not(:last-child)
-        margin: 0rem 2.6rem 0rem 0rem
-        @include maxw($pc)
-            margin: 0rem 2rem 0rem 0rem
+        // margin: 0rem 2.6rem 0rem 0rem
+        // @include maxw($pc)
+        @include adaptiv-value("margin-right", 32, 5, 0)
 
     &__signUp
         display: flex
@@ -91,6 +102,10 @@
             font-size: 1rem
             color: $title-color
             margin-right: 2.25rem
+            @include maxw($mob)
+                font-size: 0.7rem
+                margin-right: 1.25rem
+
             &:hover
                 color: #5f5858
         @include maxw($sm-pc)
@@ -112,6 +127,9 @@
             width: 30px
             height: 20px
             order: 99
+        @include maxw($mob)
+            width: 20px
+            height: 16px
 
     &__burger
         span
@@ -122,6 +140,8 @@
             height: 2px
             top: 9px
             z-index: 5
+            @include maxw($mob)
+                top: 7px
 
     &__burger:before,
     &__burger:after
@@ -139,9 +159,13 @@
     &__burger.active:before
         transform: rotate(45deg)
         top: 9px
+        @include maxw($mob)
+            top: 7px
     &__burger.active:after
         transform: rotate(-45deg)
         bottom: 9px
+        @include maxw($mob)
+            top: 7px
     &__burger.active span
         transform: scale(0)
 

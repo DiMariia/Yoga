@@ -1,0 +1,88 @@
+.pricing
+    background-color: #F5F6F9
+    h2
+        text-align: center
+    .subtitle
+        display: block
+        margin: 0 auto
+        text-align: center
+        @include adaptiv-value("max-width", 600, 340, 0)
+    &__wrapper
+        display: flex
+        justify-content: space-between
+        @include adaptiv-value("margin-top", 70, 28, 0)
+        @include maxw($sm-pc)
+            flex-wrap: wrap
+            justify-content: center
+    &__item
+        position: relative
+        background-color: #ffff
+        width: 28%
+        @include adaptiv-value("margin-right", 32, 10, 0)
+        text-align: center
+        @include maxw($lg)
+            width: 33%
+        @include maxw($sm-pc)
+            width: 40%
+            margin-top: 2rem
+        @include maxw($tablet)
+            width: 51%
+            margin-right: 0
+        @include maxw($sm-tablet)
+            width: 60%
+        @include maxw($lg-mob)
+            width: 75%
+        @include maxw($mob)
+            width: 100%
+
+        hr
+            background-color: #F4F5F7
+            height: 2px
+            border: none
+            width: 100%
+            margin-top: -1rem
+        ul
+            text-align: left
+            list-style: none
+            padding: 0
+            margin-bottom: 4.5rem
+            li
+                border: 1px solid #F4F5F7
+                border-radius: 6px
+                padding: 16px 0px 16px 16px
+                list-style-type: none
+                margin-top: 0.8rem
+                width: 95%
+                &::before
+                    content: url(../../img/price/done.png)
+                    margin-right: 1rem
+                @include maxw($tablet)
+                    padding: 10px 0px 10px 10px
+
+        .item_header
+            @include adaptiv-value("height", 200, 110, 0)
+            margin-top: 0
+            padding-top: 2.1rem + 1rem
+            &-rec
+                background-color: $main-color
+                padding-top: 2.1rem
+                h5, h4, h3
+                    color: #ffff
+                h5
+                    margin-top: 0
+        .item_main
+            padding: 0rem 1.85rem 1.85rem 1.85rem
+            @include maxw($tablet)
+                padding: 0 1rem 1rem 1rem
+            @include maxw($sm-tablet)
+                padding: 0 1.75rem 1.75rem 1.75rem
+            &-rec
+                button
+                    background-color: $main-color
+                    color: #ffff
+
+    button
+        position: absolute
+        margin-top: 2.5rem
+        bottom: 1.75rem
+        width: 85%
