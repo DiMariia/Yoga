@@ -1097,7 +1097,7 @@ body.lock {
   width: 95%;
 }
 .pricing__item ul li::before {
-  content: url(../../img/price/done.png);
+  content: url(../img/price/done.png);
   margin-right: 1rem;
 }
 @media only screen and (max-width: 968px) {
