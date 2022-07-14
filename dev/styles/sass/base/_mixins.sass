@@ -1,0 +1,38 @@
+@import 'vars'
+
+@mixin maxw($media)
+    @media only screen and(max-width: $media)
+        @content
+
+@mixin minw($media)
+    @media only screen and(min-width: $media)
+        @content
+
+@mixin minh($media)
+    @media only screen and(min-height: $media)
+        @content
+
+@mixin maxh($media)
+    @media only screen and(max-height: $media)
+        @content
+
+@mixin adaptiv-font($pc, $mob)
+    $addSize: $pc - $mob
+    $addMobSize: $addSize + $addSize * 0.7
+    @media (max-width: 767px)
+        font-size: calc(#{$mob + px} + #{$addMobSize} * ((100vw - 320px) / #{$maxWidth}))
+    @media (min-width: 767px)
+        font-size: calc(#{$mob + px} + #{$addSize} * (100vw / #{$maxWidth}))
+
+@mixin adaptiv-value($property, $startSize, $minSize, $type)
+    $addSize: $startSize - $minSize
+    @if $type==1
+        #{$property}: $startSize + px
+        @media (max-width: #{$maxWidthContainer + px})
+            #{$property}: calc(#{$minSize + px} + #{$addSize} * ((100vw - 320px) / #{$maxWidthContainer - 320}))
+    @else if $type==2
+        #{$property}: $startSize + px
+        @media (min-width: #{$maxWidthContainer + px})
+            #{$property}: calc(#{$minSize + px} + #{$addSize} * ((100vw - 320px) / #{$maxWidthScreen - 320}))
+    @else
+        #{$property}: calc(#{$minSize + px} + #{$addSize} * ((100vw - 320px) / #{$maxWidthScreen - 320}))

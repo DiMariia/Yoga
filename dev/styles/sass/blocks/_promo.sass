@@ -1,0 +1,74 @@
+.promo
+    background: url(../../img/promo/bg.jpg) center center/cover no-repeat
+    background-position: 110% 10%
+    @include maxw($sm-tablet)
+        background-position: 110% 24rem
+        background-size: 170%
+    @include maxw($mob)
+        background-position: 105% 22rem
+        background-size: 185%
+
+    &__block
+        display: flex
+        @include maxw($sm-tablet)
+            flex-wrap: wrap
+    &__bg
+        margin-top: 8rem
+        @include maxw($sm-tablet)
+            margin-top: 0
+            transform: translateY(20%)
+            display: flex
+            justify-content: center
+            margin: 0 auto
+        @include minw($sm-tablet)
+            transform: translateX(10%)
+            transform: translateY(10%)
+        @include maxw($sm-tablet)
+            transform: translateY(10%)
+
+        img
+            width: 100%
+            height: auto
+            @include maxw($sm-tablet)
+                width: 65%
+                height: auto
+                margin: 0 auto
+
+    &__offer
+        margin-top: 8rem
+        width: 50%
+        @include maxw($mob)
+            width: 100%
+            margin-top: 0.8rem
+        @include minw($mob)
+            width: 100%
+            margin-top: 2rem
+        @include minw($lg-mob)
+            margin-top: 4rem
+        @include minw($sm-tablet)
+            width: 109%
+        @include minw($tablet)
+            width: 75%
+
+    .title
+        margin-bottom: 0
+    .subtitle
+        margin-top: 1.2rem
+        @include minw($pc)
+            width: 80%
+    &__button
+        display: flex
+        margin-top: 3rem
+        @include maxw($sm-tablet)
+            margin-top: 2rem
+        @include minw($sm-tablet)
+            margin-top: 1rem
+        @include minw($tablet)
+            margin-top: 3rem
+
+    button
+        @include adaptiv-value("margin-right", 23, 10, 0)
+    &__wrapper
+        display: flex
+        justify-content: space-between
+        margin-top: 8.75rem

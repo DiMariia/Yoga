@@ -1,0 +1,112 @@
+.cards
+    transform: translateY(-60%)
+    background-color: #258675
+    max-height: 15rem
+    @include minw($lg-mob)
+        max-height: 19rem
+    @include maxw($sm-tablet)
+        transform: translateY(-20%)
+    @include minw($sm-tablet)
+        transform: translateY(-30%)
+    @include minw($tablet)
+        max-height: 15rem
+
+    &__wrapper
+        display: flex
+        align-items: center
+        justify-content: space-between
+        flex-wrap: wrap
+        transform: translateY(-50%)
+        align-items: stretch
+        @include maxw($pc)
+            transform: translateY(-40%)
+        @include maxw($tablet)
+            justify-content: center
+            margin: 0rem -1rem
+            transform: translateY(-20%)
+
+    &__item
+        width: 20%
+        @include adaptiv-value("max-height", 280, 110, 0)
+        @include adaptiv-value("padding", 24, 12, 0)
+        background-color: #ffff
+        border-radius: 3%
+        box-shadow: 0px -7px 15px -7px #dedede
+        // @include minw($sm-tablet)
+        //     width: 20%
+        @include maxw($mob)
+            width: calc( 100% / 3 )
+            margin: 0rem 0.5rem
+        @include minw($mob)
+            width: 28%
+            margin: 0rem 0.5rem
+        @include minw($lg-mob)
+            width: 23%
+        @include minw($tablet)
+            width: 20%
+
+        &-big
+            width: 35%
+            margin: 0
+            @include adaptiv-value("max-height", 280, 110, 0)
+            background-color: #FEAEA3
+            display: flex
+            justify-content: space-between
+            box-shadow: none
+            @include minw($mob)
+                width: 60%
+                margin-top: 1rem
+            @include maxw($sm-tablet)
+                width: calc( 92% - 3rem )
+                max-width: 310px
+                margin-top: 1rem
+            @include minw($sm-tablet)
+                width: 50%
+                // margin-top: 0
+            @include minw($tablet)
+                width: 40%
+                margin-top: 0
+
+    &__text
+        display: flex
+        justify-content: space-between
+        align-items: center
+        line-height: 2rem
+        height: 45%
+        h3
+            margin-top: 0rem
+    &__descr
+        width: 55%
+        height: 100%
+        a
+            font-weight: 600
+            font-size: 0.9rem
+            line-height: 1.5rem
+            color: $title-color
+            @include maxw($pc)
+                font-size: 0.7rem
+            @include maxw($tablet)
+                font-size: 0.5rem
+
+        p
+            margin-top: 0
+            @include maxw($pc)
+                font-size: 0.8rem
+                line-height: 1.1rem
+            @include maxw($tablet)
+                font-size: 0.6rem
+                line-height: 0.9rem
+
+    &__number
+        font-weight: 700
+        color: #CFCFCF
+        &-red
+            color: #FF7D6B
+    &__img
+        img
+            width: 100%
+            height: auto
+        &-big
+            img
+                height: 100%
+                width: auto

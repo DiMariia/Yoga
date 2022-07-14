@@ -1,0 +1,56 @@
+.courses
+    @include adaptiv-value("padding-bottom", 150, 70, 0)
+    h2
+        text-align: center
+    .subtitle
+        display: block
+        margin: 0 auto
+        text-align: center
+        @include adaptiv-value("max-width", 600, 340, 0)
+
+    &__wrapper
+        display: flex
+        justify-content: space-between
+        @include adaptiv-value("margin-top", 70, 28, 0)
+        @include maxw($sm-tablet)
+            flex-wrap: wrap
+            justify-content: center
+
+    &__item
+        padding: 0 1.75rem 1.75rem 1.75rem
+        // background-color: #9c9a9a
+        width: 28%
+        @include adaptiv-value("margin-right", 32, 10, 0)
+        border-radius: 8px
+        transition: 0.5s
+        &:hover
+            box-shadow: 0px 10px 20px 0px #dedede
+        @include maxw($tablet)
+            padding: 0 1rem 1rem 1rem
+            box-shadow: 0px 10px 20px 0px #dedede
+        @include maxw($sm-tablet)
+            width: 50%
+            margin-top: 2rem
+            padding: 0 1.75rem 1.75rem 1.75rem
+        @include maxw($mob)
+            width: 80%
+
+    &_img
+        display: flex
+        justify-content: center
+        width: 100%
+        height: auto
+        img
+            width: 100%
+            height: auto
+
+    button
+        display: block
+        margin: 0 auto
+        @include adaptiv-value("margin-top", 55, 28, 0)
+.cards_footer
+    a
+        @include adaptiv-font(14, 12)
+        color: $title-color
+        &:hover
+            color: $main-color

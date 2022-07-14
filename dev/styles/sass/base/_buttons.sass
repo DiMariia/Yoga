@@ -1,0 +1,60 @@
+@import 'mixins'
+
+// button get Started, Browse All, Send Message 
+
+.bttn
+    display: block
+    @include adaptiv-value("width", 180, 95, 0)
+    @include adaptiv-value("height", 60, 30, 0)
+    background-color: $main-color
+    border-radius: 6px
+    font-weight: 600
+    @include adaptiv-font(16, 10)
+    color: #ffff
+    text-align: center
+    border: none
+    cursor: pointer
+    &:hover
+        background-color: $btn-hover-color
+        transition: 0.4s ease-in-out
+    @include maxw($mob)
+        border-radius: 3px
+
+// button Sign Up
+
+.bttn-signUp
+    @include adaptiv-value("width", 120, 70, 0)
+    @include adaptiv-value("height", 55, 30, 0)
+    background-color: #FFF1E8
+    border: 1px solid $main-color
+    border-radius: 4px
+    color: $main-color
+    &:hover
+        background-color: $main-color
+        color: #ffff
+
+// button Learn more
+
+.bttn-more
+    background-color: #ffff
+    color: $title-color
+    @include adaptiv-value("width", 150, 75, 0)
+    border: 1px solid #333
+    &:hover
+        background-color: $main-color
+        color: #fff
+        border: none
+
+// button book now
+
+.bttn-outline—icon
+    background-color: #ffff
+    // background-color: $main-color
+    width: 100%
+    height: 3.1rem
+    color: $main-color
+    border: 1px solid $main-color
+    // background-image: url(../img/arrow.png)
+    &:hover
+        background-color: $main-color
+        color: #ffff

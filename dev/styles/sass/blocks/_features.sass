@@ -1,0 +1,45 @@
+.features
+    background-color: #F5F6F9
+    &__video
+        overflow: hidden
+        position: relative
+        min-height: 670px
+        max-width: 100%
+        margin: 0 auto
+        @include maxw($pc)
+            min-height: 500px
+        @include maxw($sm-pc)
+            min-height: 450px
+        @include maxw($lg-mob)
+            min-height: 240px
+            width: 100%
+        @include maxw($mob)
+            min-height: 190px
+
+        iframe
+            position: absolute
+            border: 0
+            height: 100%
+            left: 0
+            top: 0
+            width: 100%
+
+    &__wrapper
+        display: flex
+        justify-content: space-between
+        align-items: center
+        @include adaptiv-value("margin-top", 80, 30, 0)
+        @include maxw($sm-tablet)
+            flex-wrap: wrap
+        h2
+            width: 40%
+            @include maxw($sm-tablet)
+                width: 80%
+        .offer
+            width: 40%
+            margin-right: 10%
+            @include maxw($sm-tablet)
+                width: 80%
+
+            button
+                @include adaptiv-value("margin-top", 40, 15, 0)

@@ -1,0 +1,55 @@
+
+// title tor main screen  
+h1
+    font-weight: 800
+    @include adaptiv-font(70, 32)
+    color: $title-color
+
+// title and subtitle for section
+
+h2
+    font-weight: 700
+    @include adaptiv-font(50, 25)
+    color: $title-color
+
+.subtitle
+    font-weight: 400
+    @include adaptiv-font(18, 12)
+    color: $text-color
+    line-height: 1.4rem
+    @include minw($sm-tablet)
+        line-height: 1.75rem
+
+// title for card to main screen
+h3
+    font-weight: 700
+    @include adaptiv-font(24, 12)
+    color: $title-color
+    line-height: 1rem
+    @include minw($lg-mob)
+        line-height: 1.3rem
+    @include minw($sm-tablet)
+        line-height: 1.5rem
+    @include minw($sm-pc)
+        line-height: 1.75rem
+
+// title for card
+
+h4
+    font-weight: 600
+    @include adaptiv-font(20, 11)
+    line-height: 1.4rem
+    @include minw($tablet)
+        line-height: 1.9rem
+
+// other text   
+p
+    font-weight: 400
+    @include adaptiv-font(15, 10)
+    line-height: 1.25rem
+    @include minw($tablet)
+        line-height: 1.5rem
+li
+    font-weight: 400
+    @include adaptiv-font(16, 11)
+    color: $text-color
