@@ -24,7 +24,7 @@
 .bttn {
   display: block;
   width: calc(95px + 85 * ((100vw - 320px) / 1600));
-  height: calc(30px + 30 * ((100vw - 320px) / 1600));
+  height: calc(35px + 25 * ((100vw - 320px) / 1600));
   background-color: #FF9F66;
   border-radius: 6px;
   font-weight: 600;
@@ -52,10 +52,16 @@
     border-radius: 3px;
   }
 }
+@media only screen and (min-width: 1900px) {
+  .bttn {
+    height: 70px;
+    width: 200px;
+    font-size: 1.2rem;
+  }
+}
 
 .bttn-signUp {
   width: calc(70px + 50 * ((100vw - 320px) / 1600));
-  height: calc(30px + 25 * ((100vw - 320px) / 1600));
   background-color: #FFF1E8;
   border: 1px solid #FF9F66;
   border-radius: 4px;
@@ -65,11 +71,17 @@
   background-color: #FF9F66;
   color: white;
 }
+@media only screen and (min-width: 1900px) {
+  .bttn-signUp {
+    height: 70px;
+    width: 150px;
+  }
+}
 
 .bttn-more {
   background-color: white;
   color: #1C0A0A;
-  width: calc(75px + 75 * ((100vw - 320px) / 1600));
+  width: calc(80px + 70 * ((100vw - 320px) / 1600));
   border: 1px solid #333;
 }
 .bttn-more:hover {
@@ -81,7 +93,7 @@
 .bttn-outline—icon {
   background-color: white;
   width: 100%;
-  height: 3.1rem;
+  height: calc(38px + 22 * ((100vw - 320px) / 1600));
   color: #FF9F66;
   border: 1px solid #FF9F66;
 }
@@ -104,6 +116,21 @@ h1 {
     font-size: calc(32px + 38 * (100vw / 1280));
   }
 }
+@media only screen and (min-width: 1280px) {
+  h1 {
+    font-size: 5rem;
+  }
+}
+@media only screen and (min-width: 1440px) {
+  h1 {
+    font-size: 5.8rem;
+  }
+}
+@media only screen and (min-width: 1900px) {
+  h1 {
+    font-size: 7rem;
+  }
+}
 
 h2 {
   font-weight: 700;
@@ -117,6 +144,16 @@ h2 {
 @media (min-width: 767px) {
   h2 {
     font-size: calc(25px + 25 * (100vw / 1280));
+  }
+}
+@media only screen and (min-width: 1280px) {
+  h2 {
+    font-size: 3.2rem;
+  }
+}
+@media only screen and (min-width: 1900px) {
+  h2 {
+    font-size: 5rem;
   }
 }
 
@@ -138,6 +175,23 @@ h2 {
 @media only screen and (min-width: 768px) {
   .subtitle {
     line-height: 1.75rem;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .subtitle {
+    font-size: 1.1rem;
+  }
+}
+@media only screen and (min-width: 1440px) {
+  .subtitle {
+    font-size: 1.4rem;
+    line-height: 2.2rem;
+  }
+}
+@media only screen and (min-width: 1900px) {
+  .subtitle {
+    font-size: 1.7rem;
+    line-height: 2.5rem;
   }
 }
 
@@ -171,6 +225,23 @@ h3 {
     line-height: 1.75rem;
   }
 }
+@media only screen and (min-width: 1280px) {
+  h3 {
+    font-size: 1.5rem;
+  }
+}
+@media only screen and (min-width: 1440px) {
+  h3 {
+    font-size: 1.7rem;
+    line-height: 2.1rem;
+  }
+}
+@media only screen and (min-width: 1900px) {
+  h3 {
+    font-size: 2.1rem;
+    line-height: 2.3rem;
+  }
+}
 
 h4 {
   font-weight: 600;
@@ -191,6 +262,17 @@ h4 {
     line-height: 1.9rem;
   }
 }
+@media only screen and (min-width: 1280px) {
+  h4 {
+    font-size: 1.3rem;
+  }
+}
+@media only screen and (min-width: 1900px) {
+  h4 {
+    font-size: 1.8rem;
+    line-height: 2.2rem;
+  }
+}
 
 p {
   font-weight: 400;
@@ -209,6 +291,17 @@ p {
 @media only screen and (min-width: 968px) {
   p {
     line-height: 1.5rem;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  p {
+    font-size: 1rem;
+  }
+}
+@media only screen and (min-width: 1900px) {
+  p {
+    font-size: 1.3rem;
+    line-height: 2.2rem;
   }
 }
 
@@ -274,6 +367,11 @@ li {
     height: 4.3rem;
   }
 }
+@media only screen and (min-width: 1900px) {
+  .header__body {
+    height: 7rem;
+  }
+}
 .header__logo {
   color: #1C0A0A;
   font-weight: 700;
@@ -286,6 +384,21 @@ li {
 @media (min-width: 767px) {
   .header__logo {
     font-size: calc(14px + 6 * (100vw / 1280));
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .header__logo {
+    font-size: 1.2rem;
+  }
+}
+@media only screen and (min-width: 1440px) {
+  .header__logo {
+    font-size: 1.5rem;
+  }
+}
+@media only screen and (min-width: 1900px) {
+  .header__logo {
+    font-size: 1.8rem;
   }
 }
 @media only screen and (max-width: 480px) {
@@ -320,6 +433,7 @@ li {
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
+    padding: 0;
   }
 }
 .header .menu-item {
@@ -335,6 +449,21 @@ li {
 }
 .header .menu-item a:hover {
   color: #FF9F66;
+}
+@media only screen and (min-width: 1280px) {
+  .header .menu-item a {
+    font-size: 1rem;
+  }
+}
+@media only screen and (min-width: 1440px) {
+  .header .menu-item a {
+    font-size: 1.2rem;
+  }
+}
+@media only screen and (min-width: 1900px) {
+  .header .menu-item a {
+    font-size: 1.5rem;
+  }
 }
 @media only screen and (max-width: 768px) {
   .header .menu-item a {
@@ -375,6 +504,21 @@ li {
   font-size: 1rem;
   color: #1C0A0A;
   margin-right: 2.25rem;
+}
+@media only screen and (min-width: 1280px) {
+  .header__signUp a {
+    font-size: 1.1rem;
+  }
+}
+@media only screen and (min-width: 1440px) {
+  .header__signUp a {
+    font-size: 1.3rem;
+  }
+}
+@media only screen and (min-width: 1900px) {
+  .header__signUp a {
+    font-size: 1.5rem;
+  }
 }
 @media only screen and (max-width: 480px) {
   .header__signUp a {
@@ -507,7 +651,7 @@ body.lock {
 
 .promo {
   background: url(../../img/promo/bg.jpg) center center/cover no-repeat;
-  background-position: 110% 10%;
+  background-position: 110% 0%;
 }
 @media only screen and (max-width: 768px) {
   .promo {
@@ -594,6 +738,11 @@ body.lock {
     width: 75%;
   }
 }
+@media only screen and (min-width: 1440px) {
+  .promo__offer {
+    width: 69%;
+  }
+}
 .promo .title {
   margin-bottom: 0;
 }
@@ -634,6 +783,7 @@ body.lock {
 }
 
 .cards {
+  background: url(../../img/promo/green-bg.png) center center/cover no-repeat;
   transform: translateY(-60%);
   background-color: #258675;
   max-height: 15rem;
@@ -676,6 +826,11 @@ body.lock {
     justify-content: center;
     margin: 0rem -1rem;
     transform: translateY(-20%);
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .cards__wrapper {
+    transform: translateY(-30%);
   }
 }
 .cards__item {
@@ -805,6 +960,15 @@ body.lock {
 .countdown {
   padding: 0rem 0rem 3rem 0rem;
   margin-top: -3rem;
+  background-image: url(../../img/countdown/el-bg.png);
+  background-repeat: no-repeat;
+  background-position: 90% 75%;
+}
+@media only screen and (max-width: 768px) {
+  .countdown {
+    background-size: 0.9rem 1rem;
+    background-position: 90% 20%;
+  }
 }
 .countdown .container {
   display: flex;
@@ -859,7 +1023,14 @@ body.lock {
 }
 
 .features {
+  background: url(../../img/features/el-bg-1.png) 90% 80% no-repeat, url(../../img/features/el-bg-2.png) 5% 92% no-repeat, url(../../img/features/el-bg-3.png) 97% 97% no-repeat;
   background-color: #F5F6F9;
+}
+@media only screen and (max-width: 768px) {
+  .features {
+    background-size: 0.9rem 1rem;
+    background-position: 90% 90%;
+  }
 }
 .features__video {
   overflow: hidden;
@@ -897,11 +1068,18 @@ body.lock {
   top: 0;
   width: 100%;
 }
+.features hr {
+  width: calc(50px + 50 * ((100vw - 320px) / 1600));
+  height: 2px;
+  background-color: #FF9F66;
+  border: none;
+  margin-top: calc(30px + 50 * ((100vw - 320px) / 1600));
+  margin-left: 0;
+}
 .features__wrapper {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: calc(30px + 50 * ((100vw - 320px) / 1600));
 }
 @media only screen and (max-width: 768px) {
   .features__wrapper {
@@ -931,6 +1109,12 @@ body.lock {
 
 .courses {
   padding-bottom: calc(70px + 80 * ((100vw - 320px) / 1600));
+  background: url(../../img/courses/el-bg-1.png) 10% 20% no-repeat, url(../../img/courses/el-bg-2.png) 90% 92% no-repeat;
+}
+@media only screen and (max-width: 768px) {
+  .courses {
+    background: none;
+  }
 }
 .courses h2 {
   text-align: center;
@@ -996,21 +1180,55 @@ body.lock {
   margin-top: calc(28px + 27 * ((100vw - 320px) / 1600));
 }
 
+.cards_footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
 .cards_footer a {
   color: #1C0A0A;
+  font-weight: 600;
+  display: inline-block;
 }
 @media (max-width: 767px) {
   .cards_footer a {
-    font-size: calc(12px + 3.4 * ((100vw - 320px) / 1280));
+    font-size: calc(10px + 6.8 * ((100vw - 320px) / 1280));
   }
 }
 @media (min-width: 767px) {
   .cards_footer a {
-    font-size: calc(12px + 2 * (100vw / 1280));
+    font-size: calc(10px + 4 * (100vw / 1280));
   }
 }
 .cards_footer a:hover {
   color: #FF9F66;
+}
+
+.rating_block {
+  width: 125px;
+  height: 25px;
+  display: inline-block;
+}
+.rating_block input[type=radio] {
+  display: none;
+}
+.rating_block .label_rating {
+  float: right;
+  display: block;
+  width: 25px;
+  height: 25px;
+  background: url(../../img/courses/star-img.png) no-repeat 50% 0;
+  cursor: pointer;
+}
+.rating_block .label_rating:hover {
+  background: url(../../img/courses/star.png) no-repeat 50% 0;
+}
+.rating_block .label_rating:hover ~ .label_rating {
+  background: url(../../img/courses/star.png) no-repeat 50% 0;
+}
+
+.label_rating .active {
+  background: url(../../img/courses/star.png) no-repeat 50% 0;
 }
 
 .pricing {
@@ -1072,6 +1290,11 @@ body.lock {
 }
 @media only screen and (max-width: 480px) {
   .pricing__item {
+    width: 90%;
+  }
+}
+@media only screen and (max-width: 320px) {
+  .pricing__item {
     width: 100%;
   }
 }
@@ -1094,11 +1317,11 @@ body.lock {
   padding: 16px 0px 16px 16px;
   list-style-type: none;
   margin-top: 0.8rem;
-  width: 95%;
 }
 .pricing__item ul li::before {
   content: url(../../img/price/done.png);
   margin-right: 1rem;
+  vertical-align: middle;
 }
 @media only screen and (max-width: 968px) {
   .pricing__item ul li {
@@ -1108,30 +1331,37 @@ body.lock {
 .pricing__item .item_header {
   height: calc(110px + 90 * ((100vw - 320px) / 1600));
   margin-top: 0;
-  padding-top: 3.1rem;
+  padding-top: calc(15px + 35 * ((100vw - 320px) / 1600));
 }
 .pricing__item .item_header-rec {
   background-color: #FF9F66;
-  padding-top: 2.1rem;
+  padding-top: calc(15px + 15 * ((100vw - 320px) / 1600));
 }
 .pricing__item .item_header-rec h5, .pricing__item .item_header-rec h4, .pricing__item .item_header-rec h3 {
   color: white;
 }
+.pricing__item .item_header-rec h4 {
+  line-height: 1rem;
+}
 .pricing__item .item_header-rec h5 {
   margin-top: 0;
 }
+@media (max-width: 767px) {
+  .pricing__item .item_header-rec h5 {
+    font-size: calc(10px + 6.8 * ((100vw - 320px) / 1280));
+  }
+}
+@media (min-width: 767px) {
+  .pricing__item .item_header-rec h5 {
+    font-size: calc(10px + 4 * (100vw / 1280));
+  }
+}
+.pricing__item .item_header-rec h3 {
+  line-height: calc(5px + 11 * ((100vw - 320px) / 1600));
+}
 .pricing__item .item_main {
-  padding: 0rem 1.85rem 1.85rem 1.85rem;
-}
-@media only screen and (max-width: 968px) {
-  .pricing__item .item_main {
-    padding: 0 1rem 1rem 1rem;
-  }
-}
-@media only screen and (max-width: 768px) {
-  .pricing__item .item_main {
-    padding: 0 1.75rem 1.75rem 1.75rem;
-  }
+  padding: calc(20px + 10 * ((100vw - 320px) / 1600));
+  padding-top: 0;
 }
 .pricing__item .item_main-rec button {
   background-color: #FF9F66;
@@ -1141,10 +1371,15 @@ body.lock {
   position: absolute;
   margin-top: 2.5rem;
   bottom: 1.75rem;
-  width: 85%;
+  width: calc(100% - (20px + 5 * (100vw - 320px) / 1600 + 20px + 5 * (100vw - 320px) / 1600));
+  background-image: url(../../img/price/btn-arrow.png);
+  background-repeat: no-repeat;
+  background-size: 15% 105%;
+  background-position: 100% 50%;
 }
 
 .reviews {
+  background: url(../../img/reviews/el-bg-1.png) 15% 40% no-repeat, url(../../img/reviews/el-bg-2.png) 80% 45% no-repeat, url(../../img/reviews/el-bg-3.png) 20% 80% no-repeat, url(../../img/reviews/el-bg-4.png) 80% 80% no-repeat, url(../../img/reviews/el-bg-5.png) 75% 90% no-repeat;
   padding-bottom: calc(70px + 80 * ((100vw - 320px) / 1600));
 }
 .reviews h2 {
@@ -1308,7 +1543,7 @@ body.lock {
 .form__course {
   background-color: white;
   width: calc(240px + 230 * ((100vw - 320px) / 1600));
-  height: calc(310px + 250 * ((100vw - 320px) / 1600));
+  height: auto;
   padding: calc(25px + 25 * ((100vw - 320px) / 1600));
   border-radius: 6px;
   box-shadow: 0px 8px 30px -10px #dedede;
@@ -1477,13 +1712,11 @@ body {
 }
 @media only screen and (min-width: 968px) {
   .container {
-    max-width: 120rem;
     padding: 0 4rem;
   }
 }
 @media only screen and (min-width: 1024px) {
   .container {
-    max-width: 100rem;
     padding: 0 6rem;
   }
 }

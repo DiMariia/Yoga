@@ -1,5 +1,8 @@
 .courses
     @include adaptiv-value("padding-bottom", 150, 70, 0)
+    background: url(../../img/courses/el-bg-1.png) 10% 20% no-repeat, url(../../img/courses/el-bg-2.png)90% 92% no-repeat
+    @include maxw($sm-tablet)
+        background: none
     h2
         text-align: center
     .subtitle
@@ -49,8 +52,37 @@
         margin: 0 auto
         @include adaptiv-value("margin-top", 55, 28, 0)
 .cards_footer
+    display: flex
+    align-items: center
+    justify-content: space-between
     a
-        @include adaptiv-font(14, 12)
+        @include adaptiv-font(14, 10)
         color: $title-color
+        font-weight: 600
+        display: inline-block
         &:hover
             color: $main-color
+.rating_block
+    // @include adaptiv-value("width", 125, 90, 0)
+    width: 125px
+    height: 25px
+    display: inline-block
+
+    input[type="radio"]
+        display: none
+    .label_rating
+        float: right
+        display: block
+        width: 25px
+        height: 25px
+        background: url(../../img/courses/star-img.png) no-repeat 50% 0
+        cursor: pointer
+        &:hover
+            background: url(../../img/courses/star.png) no-repeat 50% 0
+        &:hover ~ .label_rating
+            background: url(../../img/courses/star.png) no-repeat 50% 0
+.label_rating .active
+    background: url(../../img/courses/star.png) no-repeat 50% 0
+
+    // input[type="radio"]:checked ~ .label_rating
+    //     background: url(../../img/courses/star.png) no-repeat 50% 0

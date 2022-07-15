@@ -4,6 +4,12 @@ h1
     font-weight: 800
     @include adaptiv-font(70, 32)
     color: $title-color
+    @include minw($pc)
+        font-size: 5rem
+    @include minw($lg)
+        font-size: 5.8rem
+    @include minw($full-hd)
+        font-size: 7rem
 
 // title and subtitle for section
 
@@ -11,6 +17,10 @@ h2
     font-weight: 700
     @include adaptiv-font(50, 25)
     color: $title-color
+    @include minw($pc)
+        font-size: 3.2rem
+    @include minw($full-hd)
+        font-size: 5rem
 
 .subtitle
     font-weight: 400
@@ -19,6 +29,14 @@ h2
     line-height: 1.4rem
     @include minw($sm-tablet)
         line-height: 1.75rem
+    @include minw($pc)
+        font-size: 1.1rem
+    @include minw($lg)
+        font-size: 1.4rem
+        line-height: 2.2rem
+    @include minw($full-hd)
+        font-size: 1.7rem
+        line-height: 2.5rem
 
 // title for card to main screen
 h3
@@ -32,6 +50,14 @@ h3
         line-height: 1.5rem
     @include minw($sm-pc)
         line-height: 1.75rem
+    @include minw($pc)
+        font-size: 1.5rem
+    @include minw($lg)
+        font-size: 1.7rem
+        line-height: 2.1rem
+    @include minw($full-hd)
+        font-size: 2.1rem
+        line-height: 2.3rem
 
 // title for card
 
@@ -41,6 +67,11 @@ h4
     line-height: 1.4rem
     @include minw($tablet)
         line-height: 1.9rem
+    @include minw($pc)
+        font-size: 1.3rem
+    @include minw($full-hd)
+        font-size: 1.8rem
+        line-height: 2.2rem
 
 // other text   
 p
@@ -49,6 +80,11 @@ p
     line-height: 1.25rem
     @include minw($tablet)
         line-height: 1.5rem
+    @include minw($pc)
+        font-size: 1rem
+    @include minw($full-hd)
+        font-size: 1.3rem
+        line-height: 2.2rem
 li
     font-weight: 400
     @include adaptiv-font(16, 11)

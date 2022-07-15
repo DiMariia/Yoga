@@ -32,7 +32,7 @@
 .form__course
     background-color: #Ffff
     @include adaptiv-value("width", 470, 240, 0)
-    @include adaptiv-value("height", 560, 310, 0)
+    height: auto
     @include adaptiv-value("padding", 50, 25, 0)
     border-radius: 6px
     box-shadow: 0px 8px 30px -10px #dedede
@@ -50,6 +50,7 @@
         input::placeholder
             color: $text-color
             @include adaptiv-font(16, 10)
+
         .text
             @include adaptiv-value("height", 150, 70, 0)
 

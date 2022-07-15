@@ -18,12 +18,12 @@
 	<div class="container header__container">
 		<div class="header__body">
 			<a href="/" class="header__logo"><img src="../img/logo.png" alt="logo">Yola.</a>
-		<div class="header__menu">
+		<div id="menu"  class="header__menu">
 			<ul class="header__menu-list">
-				<li class="menu-item"><a href="#">Home</a></li>
-				<li class="menu-item"><a href="#">Classes</a></li>
-				<li class="menu-item"><a href="#">Features</a></li>
-				<li class="menu-item"><a href="#">Contact</a></li>
+				<li class="menu-item"><a href="#s1">Home</a></li>
+				<li class="menu-item"><a href="#s5">Classes</a></li>
+				<li class="menu-item"><a href="#s4">Features</a></li>
+				<li class="menu-item"><a href="#s9">Contact</a></li>
 			</ul>
 		</div>
 		<div class="header__signUp">
@@ -43,7 +43,7 @@
 
 	
 
-<section class="promo">
+<section id="s1" class="promo">
     <div class="container">
         <div class="promo__block">
             <div class="promo__offer">
@@ -128,11 +128,12 @@
         </div>
     </div>
 </section>
-<section class="features">
+<section id="s4" class="features">
     <div class="container">
         <div class="features__video">
             <iframe width="100%" height="600" src="https://www.youtube.com/embed/AglYtpF0y6E?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
+        <hr>
         <div class="features__wrapper">
             <h2>The Better Way to Start Yoga</h2>
             <div class="offer">
@@ -142,7 +143,7 @@
         </div>
     </div>
 </section>
-<section class="courses">
+<section id="s5" class="courses">
     <div class="container">
         <h2>Popular Courses</h2>
         <div class="subtitle">Practice anywhere, anytime. Explore a new way to exercise and learn more about yourself. We are providing the best.</div>
@@ -152,8 +153,23 @@
                 <h4>Resortive Yoga Training & Immersion</h4>
                 <p>Here is some tips for new job seekars who want to get a dream job and want to shine in his career.</p>
                 <div class="cards_footer">
-                    <div class="review"></div>
-                    <a href="" class="start">Get started</a>
+                    <div class="rating_block">
+                        <input name="rating" value="5" id="rating_5" type="radio" />
+                        <label for="rating_5" class="label_rating"></label>
+                       
+                        <input name="rating" value="4" id="rating_4" type="radio" />
+                        <label for="rating_4" class="label_rating"></label>
+                       
+                        <input name="rating" value="3" id="rating_3" type="radio" />
+                        <label for="rating_3" class="label_rating"></label>
+                       
+                        <input name="rating" value="2" id="rating_2" type="radio" />
+                        <label for="rating_2" class="label_rating"></label>
+                       
+                        <input name="rating" value="1" id="rating_1" type="radio" />
+                        <label for="rating_1" class="label_rating"></label>
+                      </div>
+                        <a href="" class="start">Get started</a>
                 </div>
             </div>
             <div class="courses__item">
@@ -161,8 +177,23 @@
                 <h4>Resortive Yoga Training & Immersion</h4>
                 <p>Here is some tips for new job seekars who want to get a dream job and want to shine in his career.</p>
                 <div class="cards_footer">
-                    <div class="review"></div>
-                    <a href="" class="start">Get started</a>
+                    <div class="rating_block">
+                        <input name="rating" value="5" id="rating_5" type="radio" />
+                        <label for="rating_5" class="label_rating"></label>
+                       
+                        <input name="rating" value="4" id="rating_4" type="radio" />
+                        <label for="rating_4" class="label_rating"></label>
+                       
+                        <input name="rating" value="3" id="rating_3" type="radio" />
+                        <label for="rating_3" class="label_rating"></label>
+                       
+                        <input name="rating" value="2" id="rating_2" type="radio" />
+                        <label for="rating_2" class="label_rating"></label>
+                       
+                        <input name="rating" value="1" id="rating_1" type="radio" />
+                        <label for="rating_1" class="label_rating"></label>
+                      </div>
+                        <a href="" class="start">Get started</a>
                 </div>
             </div>
             <div class="courses__item">
@@ -170,8 +201,23 @@
                 <h4>Resortive Yoga Training & Immersion</h4>
                 <p>Here is some tips for new job seekars who want to get a dream job and want to shine in his career.</p>
                 <div class="cards_footer">
-                    <div class="review"></div>
-                    <a href="" class="start">Get started</a>
+                    <div class="rating_block">
+                        <input name="rating" value="5" id="rating_5" type="radio" />
+                        <label for="rating_5" class="label_rating"></label>
+                       
+                        <input name="rating" value="4" id="rating_4" type="radio" />
+                        <label for="rating_4" class="label_rating"></label>
+                       
+                        <input name="rating" value="3" id="rating_3" type="radio" />
+                        <label for="rating_3" class="label_rating"></label>
+                       
+                        <input name="rating" value="2" id="rating_2" type="radio" />
+                        <label for="rating_2" class="label_rating"></label>
+                       
+                        <input name="rating" value="1" id="rating_1" type="radio" />
+                        <label for="rating_1" class="label_rating"></label>
+                      </div>
+                        <a href="" class="start">Get started</a>
                 </div>
             </div>
         </div>
@@ -197,7 +243,7 @@
                     <li>Perfect for non-residence</li>
                     <li>Acces to all classes</li>
                 </ul>
-                <button class="bttn bttn-outline—icon">Book now<i class="fa-regular fa-arrow-right-long"></i></button>
+                <button class="bttn bttn-outline—icon">Book now<a class="bttn-arrow"></a></button>
                 </div>
             </div>
 
@@ -217,7 +263,7 @@
                     <li>Acces to all mentors</li>
                 </ul>
 
-                <button class="bttn bttn-outline—icon">Book now<i class="fa-regular fa-arrow-right-long"></i></button>
+                <button class="bttn bttn-outline—icon">Book now<a class="bttn-arrow"></a></button>
                </div>
             </div>
 
@@ -235,7 +281,7 @@
                     <li>Acces to all classes</li>
                     <li>Acces to all mentors</li>
                 </ul>
-                <button class="bttn bttn-outline—icon">Book now<i class="fa-regular fa-arrow-right-long"></i></button>
+                <button class="bttn bttn-outline—icon">Book now<a class="bttn-arrow"></a></button>
                </div>
             </div>
             
@@ -272,7 +318,7 @@
     </div>
 </section>
 </main>
-<footer class="footer">
+<footer id="s9" class="footer">
     <div class="container">
         <div class="footer__wrapper">
             <div class="title">

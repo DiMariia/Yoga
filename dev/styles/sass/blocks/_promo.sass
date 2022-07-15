@@ -1,6 +1,6 @@
 .promo
     background: url(../../img/promo/bg.jpg) center center/cover no-repeat
-    background-position: 110% 10%
+    background-position: 110% 0%
     @include maxw($sm-tablet)
         background-position: 110% 24rem
         background-size: 170%
@@ -49,6 +49,8 @@
             width: 109%
         @include minw($tablet)
             width: 75%
+        @include minw($lg)
+            width: 69%
 
     .title
         margin-bottom: 0

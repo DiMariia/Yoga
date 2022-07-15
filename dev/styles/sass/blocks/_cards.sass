@@ -1,4 +1,5 @@
 .cards
+    background: url(../../img/promo/green-bg.png) center center/cover no-repeat
     transform: translateY(-60%)
     background-color: #258675
     max-height: 15rem
@@ -24,6 +25,8 @@
             justify-content: center
             margin: 0rem -1rem
             transform: translateY(-20%)
+        @include minw($pc)
+            transform: translateY(-30%)
 
     &__item
         width: 20%
@@ -32,8 +35,7 @@
         background-color: #ffff
         border-radius: 3%
         box-shadow: 0px -7px 15px -7px #dedede
-        // @include minw($sm-tablet)
-        //     width: 20%
+
         @include maxw($mob)
             width: calc( 100% / 3 )
             margin: 0rem 0.5rem
