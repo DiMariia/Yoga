@@ -1499,7 +1499,7 @@ body.lock {
   padding-top: calc(70px + 30 * ((100vw - 320px) / 1600));
 }
 .footer .container {
-  background: url(../../img/footer/bg.jpg) center center/contain no-repeat;
+  background: url(../img/footer/bg.jpg) center center/contain no-repeat;
   background-size: 80% 80%;
 }
 @media only screen and (max-width: 768px) {
