@@ -40,19 +40,10 @@
         color: $title-color
         font-weight: 700
         @include adaptiv-font(20, 14)
-        @include minw($pc)
-            font-size: 1.2rem
-        @include minw($lg)
-            font-size: 1.5rem
-        @include minw($full-hd)
-            font-size: 1.8rem
-        @include maxw($mob)
-            font-size: 0.8rem
         img
             margin-right: 0.5rem
             @include maxw($mob)
                 max-width: 1.2rem
-
     &__menu
         width: 60%
         @include maxw($pc)
@@ -198,9 +189,7 @@
             width: 100%
             height: 100%
             background-color: #FFF1E8
-            // opacity: 0.9
             z-index: 2
-            // padding: 14rem 15rem
             display: none
     &__menu.active
         top: 0
